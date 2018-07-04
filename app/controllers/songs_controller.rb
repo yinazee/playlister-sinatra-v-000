@@ -30,7 +30,6 @@ class SongsController < ApplicationController
   end
 
   patch '/songs/:slug' do
-    binding.pry
     erb 'songs/show'
   end
 
