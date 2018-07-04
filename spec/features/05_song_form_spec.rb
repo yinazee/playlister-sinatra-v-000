@@ -92,8 +92,8 @@ describe "Song Forms" do
 
       visit "/songs/#{@song.slug}/edit"
     end
-
-    context "changing a song's artist" do
+    #
+    # context "changing a song's artist" do
       # it "updates the song's artist" do
       #   fill_in "Artist Name", with: "Some Nobody"
       #   click_on "Save"
@@ -103,12 +103,7 @@ describe "Song Forms" do
       #   expect(page).to have_content("Some Nobody")
       # end
 
-      it "renders to the song show page" do
-        fill_in "Artist Name", with: "That singer"
-        click_on "Save"
-        expect(page.current_path).to eq("/songs/that-one-with-the-guitar")
-      end
-    end
+
 
     context "changing a song's genres" do
       it "has a checkbox element on the form" do
